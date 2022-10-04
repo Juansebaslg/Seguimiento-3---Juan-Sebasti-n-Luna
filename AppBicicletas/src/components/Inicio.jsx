@@ -50,7 +50,7 @@ const Inicio = () => {
                     <p>City: {network.location.city}</p>
                     <a href={`/network/stations/${network.id}`}>
                       <Button mt={2} colorScheme="Green">
-                        Stations
+                        Estaciones
                       </Button>
                     </a>
                   </text>
