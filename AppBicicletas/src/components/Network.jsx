@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { uniqueNetwork } from "../functions/functions";
 import { Heading, Box, Text, Image, Flex, Spacer, Tag, Center, Square } from "@chakra-ui/react";
-import logo from "../assets/R.png";
+import logo from "../assets/puesto.png";
 let countB = 0;
 let countE = 0;
 const Network = () => {
@@ -45,20 +45,20 @@ const Network = () => {
               {station.free_bikes || station.empty_slots != null ? (
                 <Box>
                   <Flex>
-                    <Center w="150px" bg="blue.200">
+                    <Center w="150px" bg="yellow.200">
                       <Text>Bicicletas libres: {station.free_bikes}</Text>
                     </Center>
-                    <Center w="150px" bg="yellow.200">
+                    <Center w="150px" bg="blue.200">
                       <Text>Espacios libres: {station.empty_slots}</Text>
                     </Center>
-                    <Center w="170px" bg="green.200">
+                    <Center w="180px" bg="green.200">
                       <Text> Total de espacios:{" "}
                       {station.free_bikes + station.empty_slots}</Text>
                     </Center>
                     
                     <Spacer />
                     <Tag p={2} colorScheme="green">
-                      Available
+                      Disponible
                     </Tag>
                   </Flex>
                 </Box>
@@ -70,7 +70,7 @@ const Network = () => {
                   
                   <Spacer />
                   <Tag p={2} colorScheme="red">
-                    Unavailable
+                    No Disponible
                   </Tag>
                 </Flex>
               )}
