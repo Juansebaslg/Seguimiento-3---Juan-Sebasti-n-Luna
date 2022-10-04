@@ -1,9 +1,5 @@
 # Seguimiento-3-Juan-Sebastian-Luna
 
-# Getting Started with React App
-
-This project was bootstrapped with [React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
